@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 15px;
+}
+
+label {
+    width: 95px !important;
+}
+
+.layui-form-item {
+    width: 500px;
+}

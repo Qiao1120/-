@@ -25,9 +25,9 @@ function getInit() {
 }
 
 function getPhoto(data) {
-    var text = data.username[0].toUpperCase()
-    $('.Text_img').html(text)
-    $('.welcome').html('欢迎' + '\t' + data.username);
+    var text = data.nickname || data.username
+    $('.Text_img').html(data.username[0].toUpperCase())
+    $('.welcome').html('欢迎' + '\t' + text);
     if (data.user_pic.length == 0) {
         $('.Text_img').show();
         $('.layui-nav-img').hide()
